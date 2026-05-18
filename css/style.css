@@ -17,6 +17,12 @@
     padding: 0; 
 }
 
+html, body { 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Kunci biar nggak geser */
+}
+
 html { 
     scroll-behavior: smooth; 
 }
@@ -26,37 +32,32 @@ body {
     background-color: var(--bg-dark); 
     color: var(--text-main); 
     line-height: 1.6;
-    overflow-x: hidden;
     position: relative;
 }
 
-/* Overlay pas menu mobile kebuka */
-body.menu-open::before {
+/* Overlay pas menu mobile kebuka - PAKAI ::after biar nggak tabrakan */
+body.menu-open::after {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
     backdrop-filter: blur(2px);
 }
 
 /* ===== ANIMASI BINTANG JATUH BACKGROUND ===== */
-body::before,
-body::after {
+body::before {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     pointer-events: none;
     z-index: 0;
-}
-
-body::before {
     background-image: 
         radial-gradient(2px 2px at 20px 30px, #fff, transparent),
         radial-gradient(2px 2px at 40px 70px, rgba(167, 139, 250, 0.8), transparent),
@@ -67,17 +68,6 @@ body::before {
     background-size: 200px 200px;
     animation: stars 100s linear infinite;
     opacity: 0.4;
-}
-
-body::after {
-    background-image: 
-        radial-gradient(1px 1px at 50px 160px, #fff, transparent),
-        radial-gradient(2px 2px at 100px 40px, rgba(167, 139, 250, 0.7), transparent),
-        radial-gradient(1px 1px at 200px 100px, #fff, transparent);
-    background-repeat: repeat;
-    background-size: 300px 300px;
-    animation: stars 150s linear infinite reverse;
-    opacity: 0.3;
 }
 
 @keyframes stars {
@@ -259,7 +249,6 @@ nav.main-nav a:hover {
     padding: 1.5rem; 
 }
 
-/* INI YANG HILANG */
 .category-wrapper { 
     display: flex; 
     justify-content: space-between; 
@@ -384,7 +373,6 @@ footer {
         right: 0;
     }
 
-    /* INI YANG DIBENERIN */
     nav.main-nav a {
         width: 100%;
         padding: 14px 0;
