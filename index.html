@@ -3,16 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yumi no Kage</title>
+  <title>Yumi no Kage - 影の中に、物語が生きている</title>
+  
+  <!-- Font biar ganteng -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <!-- HEADER / NAVBAR -->
-  
+  <header class="navbar">
+    <div class="logo">
+      <span>Yumi no Kage</span>
+      <span class="logo-jp">影</span>
+    </div>
+    
+    <!-- Menu Desktop -->
+    <nav class="nav-desktop">
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Anime</a>
+      <a href="#">Category</a>
+      <a href="#">About</a>
+    </nav>
+
+    <!-- Tombol Hamburger buat Mobile -->
+    <button class="hamburger" id="hamburger">☰</button>
+  </header>
+
   <!-- HERO SECTION -->
-  
-  <!-- LATEST POSTS GRID -->
-  
-  <!-- FOOTER -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Yumi no Kage</h1>
+      <p class="hero-jp">影の中に、物語が生きている</p>
+      <p class="hero-desc">
+        Jelajahi dunia anime, manga, dan review jujur tanpa sensor. 
+        Semua ada di tempat gelap ini.
+      </p>
+      <a href="#" class="btn-primary">EXPLORE NOW</a>
+    </div>
+  </section>
+
+  <!-- LATEST POSTS -->
+  <section class="posts">
+    <h2>Latest Posts</h2>
+    <div class="posts-grid">
+      <div class="post-card">
+        <img src="img/post1.jpg" alt="Post 1">
+        <h3>Review Anime Musim Ini</h3>
+        <p>Review jujur tanpa filter...</p>
+      </div>
+      <div class="post-card">
+        <img src="img/post2.jpg" alt="Post 2">
+        <h3>Manga yang Wajib Dibaca</h3>
+        <p>Daftar manga terbaik 2026...</p>
+      </div>
+      <!-- Tambah card lain disini -->
+    </div>
+  </section>
+
+  <!-- BOTTOM NAV MOBILE -->
+  <nav class="nav-mobile">
+    <a href="#">🏠</a>
+    <a href="#">📖</a>
+    <a href="#">🎬</a>
+    <a href="#">📂</a>
+    <a href="#">ℹ️</a>
+  </nav>
+
+  <script src="js/script.js"></script>
 </body>
-</html>
+        </html>
