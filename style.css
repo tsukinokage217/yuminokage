@@ -16,7 +16,7 @@ body {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.9) 100%),
-    url("hero-banner.webp");
+    url("hero-banner.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(0px);
@@ -174,7 +174,7 @@ body {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.25)),
-    url("hero-banner.webp");
+    url("hero-banner.jpg");
   background-size: cover;
   background-position: center;
   border: 1px solid rgba(255,255,255,0.06);
