@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yumi no Kage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Sakura Canvas -->
+  <canvas id="sakuraCanvas"></canvas>
+
+  <div class="bg-overlay"></div>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">⛩</span>
+    </div>
+
+    <nav class="side-menu">
+      <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+      <a href="#"><i class="fa-regular fa-file-lines"></i></a>
+      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+      <a href="#"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+
+    <div class="side-bottom">
+      <a href="#"><i class="fa-solid fa-moon"></i></a>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="container">
+
+    <!-- Top Navbar -->
+    <header class="topbar" id="topbar">
+      <div class="brand">
+        <span class="brand-icon">⛩</span>
+        <span class="brand-name">Yumi no Kage</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="#">HOME</a>
+        <a href="#">BLOG</a>
+        <a href="#">ANIME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">PROJECT</a>
+        <a href="#">CONTACT</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="avatar"></div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburgerBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="closeMenu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <a class="active" href="#"><i class="fa-solid fa-house"></i> HOME</a>
+      <a href="#"><i class="fa-regular fa-file-lines"></i> BLOG</a>
+      <a href="#"><i class="fa-solid fa-star"></i> ANIME</a>
+      <a href="#"><i class="fa-regular fa-user"></i> ABOUT</a>
+      <a href="#"><i class="fa-solid fa-diagram-project"></i> PROJECT</a>
+      <a href="#"><i class="fa-regular fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Yumi no Kage</h1>
+        <h2>影の中に、物語が生きている。</h2>
+
+        <p>
+          A static anime blog that celebrate the art, story,<br>
+          and emotion behind every frame.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary glow" href="#">
+            EXPLORE NOW <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a class="btn btn-outline" href="#">
+            LATEST ARTICLES <i class="fa-regular fa-bookmark"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-indicator">
+        <div class="line"></div>
+        <div class="numbers">
+          <span class="active">01</span>
+          <span>02</span>
+          <span>03</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Grid -->
+    <main class="content-grid">
+      <section class="latest">
+        <div class="section-title">
+          <h3>Latest Posts</h3>
+          <span class="jp">最近の記事</span>
+          <a href="#" class="view-all">VIEW ALL <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="posts-grid">
+          <article class="post-card">
+            <div class="post-thumb thumb1"></div>
+            <div class="post-body">
+              <span class="tag red">REVIEW</span>
+              <h4>Tengoku Daimakyou Review</h4>
+              <p>A deep dive into one of the most underrated anime.</p>
+              <div class="post-date">
+                <i class="fa-regular fa-calendar"></i> May 20, 2024
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb thumb2"></div>
+            <div class="post-body">
+              <span class="tag purple">ANALYSIS</span>
+              <h4>The Beauty of Anime Backgrounds</h4>
+              <p>Why backgrounds in anime hit different.</p>
+              <div class="post-date">
+                <i class="fa-regular fa-calendar"></i> May 18, 2024
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb thumb3"></div>
+            <div class="post-body">
+              <span class="tag red">DISCUSSION</span>
+              <h4>Dark Themes in Modern Anime</h4>
+              <p>Exploring the darkness behind today’s popular stories.</p>
+              <div class="post-date">
+                <i class="fa-regular fa-calendar"></i> May 15, 2024
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-thumb thumb4"></div>
+            <div class="post-body">
+              <span class="tag red">RECOMMEND</span>
+              <h4>10 Anime You Should Watch in 2024</h4>
+              <p>A curated list of must-watch anime this year.</p>
+              <div class="post-date">
+                <i class="fa-regular fa-calendar"></i> May 12, 2024
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="right-panel">
+        <div class="panel-card about-card">
+          <h4>About Yumi no Kage</h4>
+          <span class="jp">ユミの影について</span>
+
+          <div class="about-avatar"></div>
+
+          <p>
+            A place where anime meets storytelling.
+            All static, all passion, no limits.
+          </p>
+
+          <a href="#" class="btn btn-outline full glow-soft">
+            LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="panel-card social-card">
+          <h4>Stay Connected</h4>
+          <span class="jp">つながりましょう</span>
+
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="section-title simple">
+        <h3>Categories</h3>
+        <span class="jp">カテゴリー</span>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card">
+          <i class="fa-solid fa-fire"></i>
+          <div>
+            <h5>Review</h5>
+            <span>レビュー</span>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <div>
+            <h5>Analysis</h5>
+            <span>分析</span>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-comments"></i>
+          <div>
+            <h5>Discussion</h5>
+            <span>ディスカッション</span>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-star"></i>
+          <div>
+            <h5>Recommendation</h5>
+            <span>おすすめ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Yumi no Kage — yuminokage.pages.dev</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
